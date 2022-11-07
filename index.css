@@ -15,13 +15,6 @@ header, body {
     text-align: center;
     font-family: 'Work Sans', sans-serif;
 } 
-.title-bar{
-    /* width: 101.5%;
-    margin-top: -0.5rem;
-    margin-left: -0.5rem;
-    padding-top: 5rem;
-    top: 0; */
-}
 .title-text{
     font-size: 4rem;
     padding-top: -2.5rem;
@@ -36,35 +29,6 @@ header, body {
     margin: 0 auto;
     align-items: center;
     border-radius: 0.5%;
-    /* background-size: 100% 100%;
-    background-repeat: no-repeat; 
-    background-image: url('ceYZqxJDgy4-1\ \(002\).jpg');
-    position:fixed ;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index:0;
-    background-size: calc(100% + 50px); */
-}
-
-.main{
-     
-}
-.main-wrapper{
-
-}
-.leftbar-bulletexpand-wrapper{
-    
-}
-.half-circle{
-
-}
-.schedule-bar{
-
-}
-.schedule-title{
-
 }
 .schedule-bullet{
     display: flex;
@@ -107,12 +71,6 @@ header, body {
     flex-wrap: nowrap;
     justify-content: center;
     margin-left: 1rem;
-}
-.rightbar-bulletexpand-wrapper{
-
-}
-.invert-half-circle{
-
 }
 .website {
     max-width: 30px;
