@@ -1,0 +1,160 @@
+header {
+    background-color: black;
+    width: 101.5%;
+    margin-left:-0.5rem;
+    margin-top: -0.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    color: white;
+}
+body {
+    background-color: #F7F7F7;
+    color: black;
+}
+header, body {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+} 
+.title-bar{
+    /* width: 101.5%;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    padding-top: 5rem;
+    top: 0; */
+}
+.title-text{
+    font-size: 4rem;
+    padding-top: -2.5rem;
+}
+.heart {
+    max-width: 2rem;
+}
+.project {
+    background-color: white;
+    width: 70%;
+    margin-top: -1.5rem !important;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 0.5%;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    background-image: url('ceYZqxJDgy4-1\ \(002\).jpg');
+    position:fixed ;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:0;
+    background-size: calc(100% + 50px); */
+}
+
+.main{
+     
+}
+.main-wrapper{
+
+}
+.leftbar-bulletexpand-wrapper{
+    
+}
+.half-circle{
+
+}
+.schedule-bar{
+
+}
+.schedule-title{
+
+}
+.schedule-bullet{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: 100 !important;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+    justify-content: center;
+    align-content: space-between;
+}
+.schedule-timetable-wrapper{
+    flex-wrap: nowrap;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold !important;
+    font-family: 'Work Sans', sans-serif;
+}
+.schedule-timetable{
+    margin-top: 1.5rem;
+}
+.schedule-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: 100 !important;
+    font-style: normal;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    margin: 0 11rem;
+}
+.name-place {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.add-info-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.rightbar-bulletexpand-wrapper{
+
+}
+.invert-half-circle{
+
+}
+.website {
+    max-width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+    filter:opacity(0.3)
+}
+.map{
+    max-width: 50px;
+    height: auto;
+    margin-top: 7px;
+    filter:opacity(0.3)
+}
+a :hover {
+    filter:opacity(0.67); 
+
+}
+.photo {
+    margin: 0 11rem;
+}
+.photo-cafe {
+    border-radius: 5%;
+    max-width: 100%;
+    min-width: 295px;
+    justify-content: center;
+}
+.photo-kalian {
+    border-radius: 5%;
+    max-width: 100%;
+    min-width: 295px;
+    justify-content: center;
+}
+.photo-karaoke{
+    border-radius: 5%;
+    max-width: 100%;
+    min-width: 295px;
+    justify-content: center;
+}
+.photo-defaqto{
+    border-radius: 5%;
+    width: 1000px;
+    max-width: 100%;
+    min-width: 295px;
+    justify-content: center;
+}
