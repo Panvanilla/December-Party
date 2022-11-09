@@ -14,6 +14,7 @@ header {
 body {
     background-color: #F7F7F7;
     color: black;
+    width: 100%;
 }
 header, body {
     text-align: center;
@@ -129,34 +130,6 @@ a :hover {
     /* min-width: 295px; */
     justify-content: center;
 }
-@media (min-width: 421px) {
-    .photo {   
-        flex: 100%;
-        max-width: 100%;
-        flex-direction: column;
-        min-width: 405px;
-      }
-      .project {   
-        width: 102%;
-        margin: -8px;
-        border-radius: 0;
-    }
-    .schedule-timetable, .schedule-description {   
-        font-size:4vw;
-    }
-    .map {
-        max-width: 30px;
-        height: auto;
-        margin-top: 5px;
-        filter: opacity(0.3);
-    }
-    .website {
-        max-width: 20px;
-        height: 20px;
-        margin-top: 10px;
-        filter: opacity(0.3);
-    }
-  }
   @media (max-width: 767px) {
     .photo {   
         flex: 100%;
@@ -209,7 +182,7 @@ a :hover {
   }
   @media (min-width: 991px) and (max-width: 1199px) {
     .project{   
-        width: 100%;
+        width: 76%;
         /* margin: -8px; */
         border-radius: 0;
     }
@@ -238,7 +211,7 @@ a :hover {
       }
       .project{   
         width: 76%;
-        margin-left: 11%;
+        /* margin: -8px; */
         border-radius: 0;
     }
     .schedule-timetable, .schedule-description {   
