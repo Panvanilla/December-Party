@@ -126,7 +126,6 @@ a :hover {
         flex: 100%;
         max-width: 100%;
         flex-direction: column;
-        min-width: 405px;
       }
       .project {   
         width: 100%;
