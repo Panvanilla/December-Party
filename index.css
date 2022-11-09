@@ -1,22 +1,13 @@
 header {
     background-color: black;
-    /* width: 101.5%; */
-    /* margin-left:-0.5rem;
-    margin-top: -0.5rem;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem; */
-    margin-left:-15px;
-    margin-top: -15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     color: white;
 }
 body {
     background-color: #F7F7F7;
     color: black;
-    margin: 0 0;
-    width: 100%;
-    position: fixed;
+    margin: 0;
 }
 header, body {
     text-align: center;
@@ -74,8 +65,7 @@ header, body {
     font-style: normal;
     font-family: 'Work Sans', sans-serif;
     color: black;
-    /* margin: 0 11rem; */
-    margin: 0 100px;
+
 }
 .name-place {
     display: flex;
@@ -104,35 +94,34 @@ a :hover {
     filter:opacity(0.67); 
 
 }
-.photo {
-    /* margin: 0 11rem; */
-    margin: 0 100px;
-}
+/* .photo {
+    margin: 0 11rem;
+} */
 .photo-cafe {
     border-radius: 5%;
     width: 100%;
-    /* min-width: 295px; */
+    min-width: 295px;
     justify-content: center;
 }
 .photo-kalian {
     border-radius: 5%;
     width: 100%;
-    /* min-width: 295px; */
+    min-width: 295px;
     justify-content: center;
 }
 .photo-karaoke{
     border-radius: 5%;
     width: 100%;
-    /* min-width: 295px; */
+    min-width: 295px;
     justify-content: center;
 }
 .photo-defaqto{
     border-radius: 5%;
     width: 100%;
-    /* min-width: 295px; */
+    min-width: 295px;
     justify-content: center;
 }
-  @media (min-width: 50px) {
+  @media (max-width: 768px) {
     .photo {   
         flex: 100%;
         max-width: 100%;
@@ -161,8 +150,13 @@ a :hover {
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .photo {   
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+      }
     .project{   
-        width: 1020%;
+        width: 100%;
         /* margin: -8px; */
         border-radius: 0;
     }
@@ -183,6 +177,11 @@ a :hover {
     }
   }
   @media (min-width: 991px) and (max-width: 1199px) {
+    .photo {   
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+      }
     .project{   
         width: 76%;
         /* margin: -8px; */
@@ -208,8 +207,7 @@ a :hover {
     .photo {   
         flex: 100%;
         flex-direction: column;
-        /* width: 890px; */
-        /* min-width: 405px; */
+        width: 890px;
       }
       .project{   
         width: 76%;
