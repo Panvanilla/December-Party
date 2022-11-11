@@ -72,7 +72,7 @@ header, body {
     display: flex;
     flex-wrap: nowrap;
 }
-.add-info-wrapper {
+.add-info-wrapper, .add-info-wrapper1 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -92,7 +92,7 @@ header, body {
     filter:opacity(0.3)
 }
 a :hover {
-    filter:opacity(0.67); 
+    filter:opacity(1); 
 
 }
 .information-block {
@@ -147,6 +147,9 @@ a :hover {
 .price-tag1 {
     width: 100%;
 }
+.price-tag2 {
+    width: 65%;
+}
 .variety, .variety1 {
     width: 28%;
 }
@@ -154,10 +157,6 @@ a :hover {
     margin-right: 20px;
     width: 21rem;
 } */
-.line-description-container1 {
-    margin-left: -40px;
-    margin-top: -105px;
-}
 .line-description-container {
     flex-wrap: nowrap;
     display: flex;
@@ -170,7 +169,18 @@ a :hover {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    margin-left: -170px;  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 0;
+}
+.website1 .website2text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
     /* Position the tooltip */
     position: absolute;
     z-index: 0;
@@ -183,7 +193,6 @@ a :hover {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    margin-left: -40px;
   
     /* Position the tooltip */
     position: absolute;
@@ -192,10 +201,23 @@ a :hover {
 .website1:hover .website1text {
     visibility: visible;
 }
+.website1:hover .website2text {
+    visibility: visible;
+}
 .map1:hover .map1text {
     visibility: visible;
 }
-@media screen and (min-width:280px) and (max-width:360px) {
+.sub-text2 {
+    font-style: normal;
+    font-weight: 100;
+}
+.sub-text3 {
+    margin-top: -3%;
+}
+.information-block1 {
+    margin-bottom: 5%;
+}
+@media screen and (min-width:66px) and (max-width:280px) {
     .photo {   
         flex: 100%;
         max-width: 100%;
@@ -210,6 +232,9 @@ a :hover {
     .schedule-timetable, .schedule-description {   
         font-size:4vw;
     }
+    /* .line-description-container {
+        margin-top: 10%;
+    } */
     .map {
         max-width: 40px;
         height: auto;
@@ -232,6 +257,12 @@ a :hover {
     /* .line-description-container {
         margin: 0 2rem;
     } */
+    .add-info-wrapper {
+        margin-top: 0%;
+    }
+    .add-info-wrapper1 {
+        margin-top: -5%;
+    }
     .price-tag {
         position: relative;
         width: 15%;
@@ -244,11 +275,126 @@ a :hover {
         font-size: 1.2vw;
         width:100%;
     }
+    .line-description-container {
+        width: 100%;
+    }
     .main-text {
         margin-top: 3%;
+        margin-left: -10%;
+    }
+    .main-text1 {
+        margin-left: -17%;
+    }
+    .main-text2 {
+        margin-top: -1%;
     }
     .sub-text {
         margin-top: -1%;
+        margin-left: -8%;
+}
+    .sub-text1 {
+        margin-left: -5%;
+        font-style: italic; 
+        font-size: 1.5vw;
+    }
+    .sub-text4 {
+        margin-top: 5%;
+    }
+    .website1 .website2text {
+        margin-left: 0px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+  }
+@media screen and (min-width:280px) and (max-width:360px) {
+    .photo {   
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+      }
+      .project {  
+        flex: 100%; 
+        width: 100%;
+        /* margin: -8px; */
+        border-radius: 0;
+    }
+    .schedule-timetable, .schedule-description {   
+        font-size:4vw;
+    }
+    /* .line-description-container {
+        margin-top: 10%;
+    } */
+    .map {
+        max-width: 40px;
+        height: auto;
+        margin-top: 5px;
+        filter: opacity(0.3);
+    }
+    .website {
+        max-width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        filter: opacity(0.3);
+    }
+    .information-block {
+        flex-wrap: wrap;
+    }
+    .information-description {
+        flex: 100%;
+        width: 100%;
+    }
+    /* .line-description-container {
+        margin: 0 2rem;
+    } */
+    .add-info-wrapper {
+        margin-top: 0%;
+    }
+    .add-info-wrapper1 {
+        margin-top: -5%;
+    }
+    .price-tag {
+        position: relative;
+        width: 15%;
+    }
+    .variety {
+        position: relative;
+        margin-top: 120px;
+    }
+    .description-container {
+        font-size: 1.2vw;
+        width:100%;
+    }
+    .line-description-container {
+        width: 100%;
+    }
+    .main-text {
+        margin-top: 3%;
+        margin-left: -10%;
+    }
+    .main-text1 {
+        margin-left: -17%;
+    }
+    .main-text2 {
+        margin-top: -1%;
+    }
+    .sub-text {
+        margin-top: -1%;
+        margin-left: -8%;
+}
+    .sub-text1 {
+        margin-left: -5%;
+        font-style: italic; 
+        font-size: 1.5vw;
+    }
+    .sub-text4 {
+        margin-top: 5%;
+    }
+    .website1 .website2text {
+        margin-left: 0px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
     }
   }
 @media screen and (min-width:360px) and (max-width:767px) {
@@ -267,16 +413,22 @@ a :hover {
         font-size:4vw;
     }
     .map {
-        max-width: 40px;
+        max-width: 50px;
         height: auto;
-        margin-top: 5px;
+        margin-top: 6px;
         filter: opacity(0.3);
     }
     .website {
-        max-width: 30px;
-        height: 30px;
-        margin-top: 10px;
+        max-width: 40px;
+        height: 40px;
+        margin-top: 11px;
         filter: opacity(0.3);
+    }
+    .add-info-wrapper {
+        margin-top: 0%;
+    }
+    .add-info-wrapper1 {
+        margin-top: -5%;
     }
     .information-block {
         flex-wrap: wrap;
@@ -286,7 +438,7 @@ a :hover {
         width: 100%;
     }
     /* .line-description-container {
-        margin: 0 2rem;
+        margin-top: 10%;
     } */
     .price-tag {
         position: relative;
@@ -296,15 +448,57 @@ a :hover {
         position: relative;
         margin-top: 120px;
     }
+    .line-description-container {
+        width: 100%;
+    }
     .description-container {
         font-size: 2.2vw;
         width:100%;
     }
     .main-text {
         margin-top: 3%;
+        margin-left: -11%;
+    }
+    .main-text1 {
+        margin-left: -17%;
+    }
+    .main-text2 {
+        margin-top: -1%;
     }
     .sub-text {
         margin-top: -1%;
+        margin-left: -10%;
+    }
+    .sub-text1 {
+        margin-left: -15%;
+        font-style: italic; 
+        font-size: 2vw;
+        font-weight: normal;
+    }
+    .sub-text2{
+        margin-top: 5%;
+    }
+    .sub-text4 {
+        margin-top: 5%;
+    }
+    .website1 .website1text {
+        margin-left: -150px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+    .map1 .map1text {
+        margin-left: -18px;
+        width: 120px;
+        padding: 3px 0;
+        border-radius: 6px;
+    }
+    .website1 .website2text {
+        margin-top: -20px;
+        margin-left: -80px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -322,16 +516,31 @@ a :hover {
         font-size:4.3vw;
     }
     .map {
-        max-width: 40px;
+        max-width: 65px;
         height: auto;
-        margin-top: 8px;
+        margin-top: 3px;
         filter: opacity(0.3);
     }
     .website {
-        max-width: 30px;
-        height: 30px;
-        margin-top: 13px;
+        max-width: 50px;
+        height: 50px;
+        margin-top: 11px;
         filter: opacity(0.3);
+    }
+    .add-info-wrapper {
+        margin-top: 0%;
+    }
+    .add-info-wrapper1 {
+        margin-top: -5%;
+    }
+    .price-tag {
+        width: 15%;
+    }
+    /* .line-description-container {
+        margin-top: 10%;
+    } */
+    .line-description-container {
+        width: 100%;
     }
     .information-block {
         flex-wrap: wrap;
@@ -345,9 +554,45 @@ a :hover {
     }
     .main-text {
         margin-top: 3%;
+        margin-left: -11%;
+    }
+    .main-text2 {
+        margin-top: -1%;
     }
     .sub-text {
         margin-top: -1%;
+        margin-left: -10%;
+    }
+    .sub-text1 {
+        font-style: italic; 
+        font-size: 1.5vw;
+        font-weight: normal;
+    }
+    .sub-text2 {
+        margin-top: 4%
+    }
+    .sub-text4 {
+        margin-top: 5%;
+    }
+    .website1 .website1text {
+        margin-left: -135px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+    .map1 .map1text {
+         margin-left: -25px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+
+    .website1 .website2text {
+        margin-top: -25px;
+        margin-left: -75px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
     }
   }
   @media screen and (min-width: 991px) and (max-width: 1199px) {
@@ -366,16 +611,26 @@ a :hover {
         font-size:40px;
     }
     .map {
-        max-width: 40px;
+        max-width: 50px;
         height: auto;
-        margin-top: 10px;
+        margin-top: 6px;
         filter: opacity(0.3);
     }
     .website {
-        max-width: 30px;
-        height: 30px;
-        margin-top: 15px;
+        max-width: 40px;
+        height: 40px;
+        margin-top: 11px;
         filter: opacity(0.3);
+    }
+    .add-info-wrapper {
+        margin-top: -5%;
+    }
+    .add-info-wrapper1 {
+        margin-top: -5%;
+    }
+    .line-description-container {
+        margin-top: 10%;
+        width: 100%;
     }
     .information-description {
         width: 100%;
@@ -383,12 +638,52 @@ a :hover {
     .description-container {
         font-size: 1.2vw;
         width:100%;
+        margin: 0 5%;
     }
     .main-text {
         margin-top: 3%;
+        margin-left: -11%;
+    }
+    .main-text2 {
+        margin-top: -1%;
     }
     .sub-text {
         margin-top: -1%;
+        margin-left: -8%;
+    }
+    .sub-text1 {
+        font-style: italic; 
+        font-size: 1vw;
+        font-weight: normal;
+    }
+    .sub-text2 {
+        font-size: 1vw;
+        margin-top: 10%;
+    }
+    .sub-text4 {
+        margin-top: 5%;
+    }
+    .price-tag2{
+        margin-top: 27%;
+    }
+    .website1 .website1text {
+        margin-left: -130px; 
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+    .map1 .map1text {
+         margin-left: -20px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+    .website1 .website2text {
+        margin-top: -25px;
+        margin-left: -75px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -409,16 +704,23 @@ a :hover {
         font-size: 70px
     }
     .map {
-        max-width: 100px;
+        max-width: 70px;
         height: auto;
         margin-top: 0px;
         filter: opacity(0.3);
     }
     .website {
-        max-width: 75px;
-        height: 75px;
-        margin-top: 13px;
+        max-width: 50px;
+        height: 50px;
+        margin-top: 11px;
         filter: opacity(0.3);
+    }
+    .add-info-wrapper1 {
+        margin-top: -5%;
+    }
+    .line-description-container {
+        margin-top: 10%;
+        width: 100%;
     }
     .information-description {
         width: 100%;
@@ -426,11 +728,46 @@ a :hover {
     .description-container {
         font-size: 1.2vw;
         width:100%;
+        margin: 0 5%;
     }
     .main-text {
         margin-top: 3%;
+        margin-left: -11%;
+    }
+    .main-text2 {
+        margin-top: -1%;
     }
     .sub-text {
-        margin-top: -2%;
+        margin-top: -1%;
+        margin-left: -7%;
+    }
+    .sub-text1 {
+        font-size: 1vw;
+        font-style: italic;
+        font-weight: normal;
+    }
+    .sub-text2 {
+        margin-top: 1%;
+        font-size: 1vw;
+        margin-top: 10%
+    }
+    .sub-text4 {
+        margin-top: 5%;
+    }
+    .price-tag2{
+        margin-top: 30%;
+    }
+    .website1 .website1text {
+        margin-left: -160px;
+    }
+    .website1 .website2text {
+        margin-left: -80px;
+        width: 120px;
+        padding: 4px 0;
+        border-radius: 6px;
+        margin-top: -35px;
+    }
+    .map1 .map1text {
+        margin-left: -25px;
     }
   }
